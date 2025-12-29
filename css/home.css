@@ -1,0 +1,810 @@
+/*  */
+.warp {
+  width: 100%;
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 40px;
+}
+
+/* header */
+.header {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* 헤더 고정 */
+  background-color: var(--white);
+  /* 색을 못 불러올 경우를 생각해, 래퍼런스 토근을 적어준다. */
+  border-bottom: 1px solid var(--g100, #e6e6e6);
+}
+
+.header .inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* 균등하게 배치 */
+  justify-content: space-between;
+}
+
+.header .logo {
+  position: relative;
+}
+
+.header .logo a {
+  position: relative;
+}
+
+.header .logo a h1 {
+  font-size: var(--xx-large);
+  font-weight: 600;
+  color: var(--p600, #df030f);
+  text-align: center;
+}
+
+.nav {
+  position: relative;
+}
+
+.nav ul {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* 글자의 가격 */
+  gap: var(--large);
+}
+.nav ul li {
+  position: relative;
+}
+.nav ul li a {
+  font-size: var(--large);
+  font-weight: 500;
+  letter-spacing: -0.32px;
+  color: var(--g600);
+  text-align: center;
+  /*  */
+  align-items: center;
+  justify-content: center;
+  padding: var(--xx-small) var(--large);
+  /* 공간은 2px에 투명한 바 */
+  border-bottom: 2px solid transparent;
+}
+.nav ul li:hover a {
+  border-bottom: 2px solid var(--p500);
+  color: var(--s900);
+}
+
+.utils {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--large);
+}
+
+.mb-menu {
+  display: none;
+}
+
+.mb-menu img {
+  width: var(--xx-large);
+  height: var(--xx-large);
+  object-fit: contain;
+}
+
+.employ-btn {
+  /* height: var(--xxxx-large); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 var(--small);
+  gap: var(--xx-small);
+  background-color: var(--s900);
+  border-radius: 10px;
+}
+
+.employ-btn img {
+  width: var(--large);
+  height: var(--large);
+  object-fit: contain;
+}
+
+.employ-btn span {
+  line-height: var(--xxx-large);
+  letter-spacing: -0.32px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--white);
+}
+
+/* hero */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 830px;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  position: relative;
+  width: 100%;
+  height: 830px;
+  object-fit: cover;
+}
+
+.introduce-wrap {
+  position: absolute;
+  /* 앱솔루트를 지정하면 가운데로 */
+  /* 부모기준 0, 0 그 높이 기준으로 50%, 왼쪽에서 50% */
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  /* 2D x축 y축 */
+  transform: translate(-50%, -50%);
+  /*  */
+  /* 요소들의 주축들이 column으로 위 아래로 돌아간다. */
+  /* 그래서 flex-start로 균등하게 배치. */
+  flex-direction: column;
+  align-items: flex-start;
+  /*  */
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 40px;
+  display: flex;
+  gap: var(--xx-large);
+}
+
+.introduce {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--large);
+}
+
+.introduce .title {
+  position: relative;
+}
+.introduce .title p {
+  font-size: var(--heading1);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.96px;
+  color: var(--white);
+}
+.introduce .sub-title {
+  position: relative;
+}
+.introduce .sub-title p {
+  font-size: var(--xxx-large);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.64px;
+  color: var(--p500);
+}
+.introduce .sub-title span {
+  font-size: var(--xx-large);
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.48px;
+  color: var(--white);
+}
+
+.project-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--x-small) var(--large);
+  background-color: var(--white);
+  gap: var(--xx-small);
+  border-radius: var(--x-small);
+}
+
+.project-btn span {
+  color: var(--s900);
+}
+
+.project-btn img {
+  width: var(--large);
+  height: var(--large);
+  object-fit: contain;
+}
+
+/* skill */
+.skill-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.skill-section .inner {
+  min-width: 1025px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  gap: var(--xxxx-large);
+}
+
+/* project section 타이틀과 공통 스타일 시작 */
+
+.section-title {
+  position: relative;
+  display: flex;
+  gap: var(--xx-small);
+  flex-direction: column;
+}
+
+.section-title .title {
+  position: relative;
+}
+.section-title .title h2 {
+  font-size: var(--xxxx-large);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.72px;
+  color: var(--s900);
+}
+
+.section-title .sub-title {
+  position: relative;
+}
+
+.section-title .sub-title p {
+  font-size: var(--xx-large);
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.48px;
+  color: var(--g600);
+}
+
+.contents {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* project section 타이틀과 공통 스타일 끝 */
+
+.skill-section .contents .card {
+  position: relative;
+  /* 카드의 사이즈를 min값과 max값 */
+  flex: 1 0 0;
+  max-width: 380px;
+  min-width: 280px;
+  border-radius: var(--medium);
+  /* 넘치는 부분을 가려주기 */
+  overflow: hidden;
+  background-color: var(--white);
+  /* box-shadow: x축, y축, blue값, Spread값 */
+  /* box-shadow: 앞에는 밑부분, 뒤에는 윗부분 값 */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.skill-section .contents .card .thumbnail {
+  position: relative;
+  width: 100%;
+  max-height: 192px;
+  aspect-ratio: 95/48;
+}
+.skill-section .contents .card .thumbnail figure {
+  position: relative;
+}
+.skill-section .contents .card .thumbnail figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.skill-section .contents .card .thumbnail .badge {
+  position: absolute;
+  top: var(--large);
+  right: var(--large);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--xx-small) var(--small);
+  /* 절반만 넘어가도 상관없다. */
+  border-radius: 15px;
+  background-color: var(--s900);
+}
+.skill-section .contents .card .thumbnail .badge span {
+  text-align: center;
+  font-size: var(--medium);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.28;
+  color: var(--white);
+}
+
+.skill-section .contents .card .thumbnail .badge.best {
+  background-color: var(--p600);
+}
+
+.skill-section .contents .card-info {
+  position: relative;
+  padding: var(--xx-large);
+}
+.skill-section .contents .card-info .card-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--large);
+  /* margin-top을 잘 안주는 이유: 탑과 바텀이 겹쳐지는 상황이 발생 */
+  /* 필요한 상황이 있으면 쓰게된다. */
+}
+.skill-section .contents .card-info .card-title h4 {
+  font-size: var(--x-large);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.4;
+  color: var(--s900);
+}
+
+.skill-section .contents .card-info .card-title .stars {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--xx-small);
+}
+.skill-section .contents .card-info .card-title .stars li {
+  position: relative;
+}
+.skill-section .contents .card-info .card-title .stars li img {
+  width: var(--large);
+  height: var(--large);
+  object-fit: contain;
+}
+.skill-section .contents .card-info .skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--xx-small);
+  margin-bottom: var(--xxx-large);
+}
+.skill-section .contents .card-info .skill-list .skill {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--x-small);
+}
+.skill-section .contents .card-info .skill-list .skill img {
+  width: var(--large);
+  height: var(--large);
+  object-fit: contain;
+}
+.skill-section .contents .card-info .skill-list .skill span {
+  line-height: var(--xx-large);
+  color: var(--s800);
+}
+.skill-section .contents .card-info .show-more {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  padding: 12px 0px;
+  border-radius: var(--small);
+  background-color: var(--s900);
+}
+.skill-section .contents .card-info .show-more span {
+  font-weight: 500;
+  text-align: center;
+  color: var(--g100);
+}
+
+/* project */
+.project-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.project-section .inner {
+  min-width: 1025px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  gap: var(--xxxx-large);
+}
+
+.project-section .contents .card {
+  position: relative;
+  /* 카드의 사이즈를 min값과 max값 */
+  flex: 1 0 0;
+  max-width: 380px;
+  min-width: 280px;
+  border-radius: var(--medium);
+  /* 넘치는 부분을 가려주기 */
+  overflow: hidden;
+  background-color: var(--white);
+  /* box-shadow: x축, y축, blue값, Spread값 */
+  /* box-shadow: 앞에는 밑부분, 뒤에는 윗부분 값 */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+.project-section .contents .card .thumbnail {
+  position: relative;
+  width: 100%;
+  max-height: 192px;
+  aspect-ratio: 95/48;
+}
+.project-section .contents .card .thumbnail figure {
+  position: relative;
+}
+.project-section .contents .card .thumbnail figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project-section .contents .card .thumbnail .badge {
+  position: absolute;
+  top: var(--large);
+  right: var(--large);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--xx-small) var(--small);
+  /* 절반만 넘어가도 상관없다. */
+  border-radius: 15px;
+  background-color: var(--s900);
+}
+.project-section .contents .card .thumbnail .badge span {
+  text-align: center;
+  font-size: var(--medium);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.28px;
+  color: var(--white);
+}
+
+.project-section .contents .card .thumbnail .badge.complete {
+  background-color: var(--p600);
+}
+
+.project-section .contents .card .card-info {
+  position: relative;
+  padding: var(--xx-large);
+}
+.project-section .contents .card .card-info .card-title {
+  position: relative;
+  width: 100%;
+  margin-bottom: var(--large);
+}
+.project-section .contents .card .card-info .card-title .cate {
+  position: relative;
+}
+.project-section .contents .card .card-info .card-title .cate span {
+  font-size: var(--medium);
+  color: var(--g500);
+  line-height: 1.4;
+  letter-spacing: -0.28px;
+}
+.project-section .contents .card .card-info .card-title .info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--x-small);
+}
+.project-section .contents .card .card-info .card-title .info h4 {
+  font-size: var(--x-large);
+  font-weight: 600;
+  color: var(--s900);
+  line-height: 1.4;
+  letter-spacing: -0.4px;
+}
+.project-section .contents .card .card-info .card-title .info p {
+  color: var(--s800);
+}
+.project-section .contents .card .card-info .skill-tag {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--x-small);
+  margin-bottom: var(--xx-large);
+}
+.project-section .contents .card .card-info .skill-tag .tag {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--xx-small) var(--small);
+  border-radius: 15px;
+  background-color: var(--g100);
+}
+.project-section .contents .card .card-info .skill-tag .tag span {
+  font-size: var(--small);
+  line-height: 1.4;
+  letter-spacing: -0.24px;
+}
+.project-section .contents .card .card-info .show-more {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--x-small);
+  padding: var(--small) 0;
+  border-radius: var(--small);
+  /* figma stoke -> inside weight 효과 줄 때 */
+  border: 1px solid var(--s900);
+}
+.project-section .contents .card .card-info .show-more img {
+  width: var(--large);
+  height: var(--large);
+  object-fit: contain;
+}
+.project-section .contents .card .card-info .show-more span {
+  font-weight: 500;
+  color: var(--s900);
+}
+
+/* contact */
+.contact-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--s900);
+}
+.contact-section .inner {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 1280px;
+  min-width: 1025px;
+  align-items: center;
+  gap: var(--xxx-large);
+  padding: 120px 40px;
+}
+
+.contact-section .inner .section-title {
+  position: relative;
+  flex: 1 0 0;
+}
+
+.contact-section .inner .section-title .title {
+  position: relative;
+  margin-bottom: var(--x-large);
+}
+
+.contact-section .inner .section-title .title h2 {
+  font-size: var(--big);
+  color: var(--white);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -1.12px;
+}
+
+.contact-section .inner .section-title .sub-title {
+  position: relative;
+  margin-bottom: var(--large);
+}
+
+.contact-section .inner .section-title .sub-title p {
+  color: var(--s100);
+  font-size: var(--xx-large);
+  font-weight: 600;
+  letter-spacing: -0.48px;
+}
+
+.contact-section .inner .info-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--x-small);
+}
+.contact-section .inner .info-list .info {
+  position: relative;
+  display: flex;
+  gap: var(--small);
+  align-items: center;
+}
+.contact-section .inner .info-list .info img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.contact-section .inner .info-list .info span {
+  color: var(--s100);
+}
+.contact-section .contact {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  gap: var(--xx-large);
+  padding: var(--xxx-large) var(--xxx-large);
+  border-radius: var(--large);
+  background-color: var(--white);
+}
+.contact-section .contact .cta-title {
+  position: relative;
+}
+.contact-section .contact .cta-title h4 {
+  color: var(--s900);
+  font-size: var(--xx-large);
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: -0.48px;
+}
+.contact-section .contact .cta-list {
+  position: relative;
+  display: flex;
+  gap: var(--large);
+  flex-direction: column;
+}
+.contact-section .contact .cta-list li {
+  position: relative;
+}
+.contact-section .contact .cta-list li a {
+  flex-direction: column;
+  display: flex;
+  gap: var(--xx-small);
+  padding: var(--large) var(--xx-large);
+  border-radius: 10px;
+  background-color: var(--g100);
+}
+.contact-section .contact .cta-list li a .icon {
+  position: relative;
+  display: flex;
+  gap: var(--xx-small);
+  align-items: center;
+}
+.contact-section .contact .cta-list li a .icon img {
+  width: var(--xx-large);
+  height: var(--xx-large);
+  object-fit: contain;
+}
+.contact-section .contact .cta-list li a .icon span {
+  color: var(--s900);
+}
+.contact-section .contact .cta-list li a p {
+  color: var(--g600);
+}
+
+/* footer */
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--g900);
+}
+.footer .inner {
+  position: relative;
+  display: flex;
+  gap: var(--xx-large);
+  flex-direction: column;
+  padding: var(--xx-large) var(--xx-large);
+  width: 100%;
+  max-width: 1280px;
+  max-width: 1025px;
+}
+.footer .inner .footer-top {
+  position: relative;
+  margin-top: var(--xx-large);
+  display: flex;
+  justify-content: space-between;
+}
+.footer .inner .footer-top .logo {
+  position: relative;
+}
+.footer .inner .footer-top .logo a {
+  font-weight: 500;
+  color: var(--white);
+}
+.footer .inner .footer-top .cate {
+  position: relative;
+  display: flex;
+  gap: var(--large);
+  flex-direction: column;
+}
+.footer .inner .footer-top .cate h4 {
+  color: var(--white);
+  font-weight: 500;
+}
+.footer .inner .footer-top .cate ul {
+  position: relative;
+  display: flex;
+  gap: var(--x-small);
+  flex-direction: column;
+}
+.footer .inner .footer-top .cate ul li {
+  position: relative;
+}
+.footer .inner .footer-top .cate ul li a {
+  color: var(--g400);
+}
+.footer .inner .footer-top .site-map {
+  position: relative;
+  display: flex;
+  gap: var(--large);
+  flex-direction: column;
+}
+.footer .inner .footer-top .site-map h4 {
+  color: var(--white);
+  font-weight: 500;
+}
+.footer .inner .footer-top .site-map ul {
+  position: relative;
+  display: flex;
+  gap: var(--x-small);
+  flex-direction: column;
+}
+.footer .inner .footer-top .site-map ul li {
+  position: relative;
+}
+.footer .inner .footer-top .site-map ul li a {
+  color: var(--g400);
+}
+.footer .inner .footer-top .sns {
+  position: relative;
+  display: flex;
+  gap: var(--large);
+  flex-direction: column;
+}
+.footer .inner .footer-top .sns h4 {
+  color: var(--white);
+  font-weight: 500;
+}
+.footer .inner .footer-top .sns ul {
+  position: relative;
+  display: flex;
+  gap: var(--x-small);
+  align-items: center;
+}
+.footer .inner .footer-top .sns ul li {
+  position: relative;
+}
+.footer .inner .footer-top .sns ul li a {
+  width: var(--xx-large);
+  height: var(--xxx-large);
+}
+.footer .inner .footer-top .sns ul li a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.footer .inner .footer-bottom {
+  position: relative;
+  display: flex;
+  padding: var(--xx-large) 0;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--g700);
+}
+.footer .inner .footer-bottom .copyright {
+  position: relative;
+}
+.footer .inner .footer-bottom .copyright span {
+  color: var(--g400);
+}
+.footer .inner .footer-bottom .policies {
+  position: relative;
+  display: flex;
+  gap: var(--xx-large);
+  align-items: center;
+}
+.footer .inner .footer-bottom .policies a {
+  color: var(--g400);
+}

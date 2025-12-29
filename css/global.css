@@ -1,0 +1,114 @@
+/*  */
+/* font - import : Git Hub import 문장 복 붙 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+/* 변수로 쓸 수 있다. */
+/* 래퍼런스 토큰!!!! */
+/* 나누는 목적을 유지보수 중시하기 */
+/* style guide */
+:root {
+  /* primary color */
+  --p100: #ffe2e4;
+  --p200: #feb0b4;
+  --p300: #fd7e84;
+  --p400: #fd4b55;
+  --p500: #fc1925;
+  --p600: #df030f;
+  --p700: #ad020b;
+  --p800: #7a0208;
+  --p900: #480105;
+
+  /* secondary color */
+  --s100: #e4eef5;
+  --s200: #bfd6e7;
+  --s300: #99bfda;
+  --s400: #74a7cc;
+  --s500: #4f8fbe;
+  --S600: #3b759f;
+  --s700: #2d5a7a;
+  --s800: #1f3e55;
+  --s900: #112330;
+
+  /* newtral color */
+  --white: #fff;
+  --black: #000;
+  --g100: #e6e6e6;
+  --g200: #cccccc;
+  --g300: #b3b3b3;
+  --g400: #999999;
+  --g500: #808080;
+  --g600: #666666;
+  --g700: #4d4d4d;
+  --g800: #333333;
+  --g900: #1a1a1a;
+
+  /* size */
+  --xx-small: 4px;
+  --x-small: 8px;
+  --small: 12px;
+  --medium: 14px;
+  --large: 16px;
+  --x-large: 20px;
+  --xx-large: 24px;
+  --xxx-large: 32px;
+  --xxxx-large: 36px;
+  --extra: 48px;
+  --big: 56px;
+
+  /* system token */
+  --accent: var(--p500);
+  --background: var(--white);
+  --text: var(--g900);
+  --text-align: var(--g700);
+
+  /* size system */
+  --heading1: var(--extra);
+  --heading2: var(--xxxx-large);
+  --heading3: var(--xx-large);
+  --body: var(--large);
+  --caption: var(--medium);
+}
+
+/*  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  /* 가로 스크롤 방지 */
+  overflow-x: hidden;
+  background-color: var(--background);
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
+  font-size: var(--large);
+  font-weight: 400;
+  /* 웹 페이지를 제작할 때 텍스트의 줄 간격을 설정하는 CSS 표준 속성 */
+  line-height: 1.6;
+  color: var(--text);
+  letter-spacing: -0.32px;
+  /* 웹 브라우저마다 기본 스타일이 다르다 */
+  /* 모바일 브라우저에서 텍스트 크기 자동 조정을 제어하는 데 사용되는 실험적, 비표준 CSS 속성 */
+  text-size-adjust: 100%;
+
+  /* 부드럽게 이동 */
+  scroll-behavior: smooth;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  display: block;
+  color: var(--text);
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+/*  */
